@@ -268,3 +268,4 @@ public class MasterAutomationTest extends BaseTest {
         Assert.assertTrue(driver.getPageSource().contains("Thank you"), "Order not completed successfully");
     }
 }
+
