@@ -16,8 +16,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp() { 
-        // If chromedriver is not on PATH, set the path here:
-        // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+       
     	WebDriver driver = new ChromeDriver();
 
         ChromeOptions options = new ChromeOptions();
@@ -37,3 +36,4 @@ public class BaseTest {
         }
     }
 }
+
