@@ -11,10 +11,6 @@ public class CalendarUtil {
     private CalendarUtil() {
     }
 
-    /**
-     * Generic calendar selector for jQuery-style calendars.
-     * You may need to adjust locators according to the website.
-     */
     public static void selectDate(WebDriver driver,
                                   By monthYearLocator,
                                   By nextButtonLocator,
@@ -44,3 +40,4 @@ public class CalendarUtil {
         }
     }
 }
+
