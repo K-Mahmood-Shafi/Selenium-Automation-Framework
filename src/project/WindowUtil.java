@@ -19,7 +19,6 @@ public class WindowUtil {
                 return;
             }
         }
-        // If not found, switch back
         driver.switchTo().window(current);
     }
 
@@ -44,3 +43,4 @@ public class WindowUtil {
         driver.switchTo().window(parent);
     }
 }
+
