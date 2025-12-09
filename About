@@ -1,0 +1,10 @@
+🔸 Selenium Automation Framework (Java + TestNG + Maven)
+A complete UI automation framework with:
+✔ Locator automation
+✔ Dynamic & auto-suggest dropdowns
+✔ Actions class interactions
+✔ Alerts & frames
+✔ Multi-window/tab handling
+✔ Calendar automation
+✔ Screenshot handling
+✔ End-to-end ecommerce checkout flow
