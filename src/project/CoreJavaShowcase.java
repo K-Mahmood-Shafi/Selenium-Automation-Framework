@@ -79,7 +79,7 @@ public class CoreJavaShowcase {
         s2.printDetails();
     }
 
-    // Simple inner class to show constructor & encapsulation
+
     static class Student {
         private String name;
         private int age;
@@ -96,3 +96,4 @@ public class CoreJavaShowcase {
         }
     }
 }
+
