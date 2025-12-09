@@ -13,7 +13,6 @@ public class DropDownUtil {
     private DropDownUtil() {
     }
 
-    // Static dropdown using <select> tag
     public static void selectByVisibleText(WebElement element, String text) {
         new Select(element).selectByVisibleText(text);
     }
@@ -26,7 +25,6 @@ public class DropDownUtil {
         new Select(element).selectByValue(value);
     }
 
-    // Dynamic dropdown – clicks options from a list
     public static void selectDynamicOptionByText(WebDriver driver, By optionsLocator, String textToSelect) {
         List<WebElement> options = driver.findElements(optionsLocator);
         for (WebElement option : options) {
@@ -37,7 +35,6 @@ public class DropDownUtil {
         }
     }
 
-    // Auto-suggestive dropdown – type and pick from suggestions
     public static void selectFromAutoSuggest(WebDriver driver, By inputLocator, By suggestionLocator, String textToType,
             String finalSelection) {
 
@@ -45,7 +42,6 @@ public class DropDownUtil {
         input.clear();
         input.sendKeys(textToType);
 
-        // Small wait to load suggestions
         WaitUtil.sleep(1000);
 
         List<WebElement> suggestions = driver.findElements(suggestionLocator);
@@ -56,7 +52,7 @@ public class DropDownUtil {
             }
         }
 
-        // Fallback – press ENTER if not found clearly
         input.sendKeys(Keys.ENTER);
     }
 }
+
